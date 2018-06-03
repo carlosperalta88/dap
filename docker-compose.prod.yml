@@ -1,0 +1,9 @@
+app:
+    build:
+      context: .
+      dockerfile: prod.Dockerfile
+    ports:
+    - "5000:5000"
+    volumes:
+      - '.:/app'
+      - '/tmp:/socket'
